@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Creative 404 Page with SVG and GSAP - COIDEA</title>
+		<meta name="description" content="Creative 404 error page template made with SVG and GSAP's Tweenmax." />
+		<meta name="keywords" content="fullscreen, animation, svg, javascript, gsap, 404, error, hero" />
+		<meta name="author" content="Mirza Hodzic - COIDEA" />
+		<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+    
+    <!-- DELETE THIS PART ( Global site tag (gtag.js) - Google Analytics ) - START -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124048250-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124048250-1');
+    </script>
+    <!-- DELETE THIS PART ( Global site tag (gtag.js) - Google Analytics ) - END -->
+
+  </head>
+  <body>
+    
+    <!-- COIDEA:demo START -->
+
+      <!-- COIDEA:demo:header START -->
+      <header>
+        <div class="logo">
+          <a href="#">LIGHTS</a>
+        </div>
+        <nav>
+          <li>
+            <a href="https://coidea.website/categories/challenges/creative-404-page-with-svg-and-gsap/">Article</a>
+          </li>
+          <li>
+            <a href="https://github.com/COIDEAwebsite/creative-404-page-with-svg-and-gsap">Github</a>
+          </li>
+          <li>
+            <a href="https://coidea.website/categories/challenges/animated-text-with-particles">previous demo</a>
+          </li>
+        </nav>
+      </header>
+      <!-- COIDEA:demo:header END -->
+    
+      <!-- COIDEA:demo:main START -->
+      <section class="coidea-error-demo" style="background-image: url(assets/img/bcg.jpg);">
+        <div class="content">
+          
+          <div class="description">
+            <h1>Oops,<br>something's<br>gone wrong</h1>
+            <p>Not to worry, why don't you try one of these helpful links:</p>
+            <div class="links">
+              <a href="https://coidea.website/">Homepage</a>
+              <a href="https://coidea.website/about">About us</a>
+            </div>
+          </div>
+
+          <div class="error">
+            <svg version="1.1" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+              
+              <defs>
+                <filter id="gemma">
+                  <feMorphology operator="dilate" radius="0" in="SourceAlpha" result="BEVEL_10" />
+                  <feOffset dx="0.5" dy="-1.5" in="BEVEL_20" result="BEVEL_30"/>
+                  <feComposite operator="out" in="BEVEL_20" in2="BEVEL_10" result="BEVEL_30"/>
+                  <feFlood flood-color="#333333" result="COLOR-glow" />
+                  <feComposite in="COLOR-glow" in2="BEVEL_30" operator="in" result="BEVEL_40" />
+                  <feMerge result="BEVEL_50">
+                    <feMergeNode in="BEVEL_40" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+                <filter id="gemma-glow">
+                  <feMorphology operator="dilate" radius="0" in="SourceAlpha" result="BEVEL_10" />
+                  <feOffset dx="0.5" dy="-1.5" in="BEVEL_20" result="BEVEL_30"/>
+                  <feComposite operator="out" in="BEVEL_20" in2="BEVEL_10" result="BEVEL_30"/>
+                  <feFlood flood-color="#F62459" result="COLOR-glow" />
+                  <feComposite in="COLOR-glow" in2="BEVEL_30" operator="in" result="BEVEL_40" />
+                  <feMerge result="BEVEL_50">
+                    <feMergeNode in="BEVEL_40" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+          
+              <g class="filtered">
+                <text x="52" y="72" font-family="Neoneon" text-anchor="middle" class="glow">404</text>
+              </g>
+          
+            </svg>
+
+            <span class="error-message">Page not found</span>
+
+          </div>
+        </div>
+      </section>   
+      <!-- COIDEA:demo:main START -->
+
+    <!-- COIDEA:demo END -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="assets/js/demo.js"></script>
+
+  </body>
+</html>
